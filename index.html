@@ -558,9 +558,29 @@
             </li>
           </ul>
         </div>
+        <div class="footer-column3">
+          <b class="footer-subscribe-title">Подпишитесь на рассылку</b>
+          <form class="subscribe-form" autocomplete="off">
+            <label for="e-mail" class="email-label"></label>
+            <input
+              class="email-input"
+              type="email"
+              placeholder="E-mail"
+              name="e-mail"
+              required=""
+            />
+            <button class="button-submit" type="submit">
+              Подписаться
+              <svg class="submit-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
+    <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close type="button" class="close-button">
@@ -572,6 +592,7 @@
             ></use>
           </svg>
         </button>
+        <form></form>
       </div>
     </div>
 

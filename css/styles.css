@@ -521,7 +521,12 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-welcome {
+.footer-column2 {
+  margin-right: 94px;
+}
+
+.footer-welcome,
+.footer-subscribe-title {
   color: var(--white-color);
   font-weight: 700;
   line-height: 1.143;
@@ -547,6 +552,52 @@ body {
 .footer-column2 .icons-link:focus {
   background-color: var(--accent-color);
 }
+
+.subscribe-form {
+  display: flex;
+}
+
+.email-input {
+  display: inline-block;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--bgc-hero);
+}
+
+.button-submit {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  line-height: 1.143;
+  letter-spacing: 0.06em;
+  margin-left: 12px;
+  padding: 10px 28px;
+  color: var(--white-color);
+  background: var(--accent-color);
+  border-style: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-submit:hover {
+  background-color: var(--bgc-hero-button-hover);
+}
+
+.submit-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: currentColor;
+}
+
 /* ФУТЕР */
 
 /* -- ПОРТФОЛІО -- */
