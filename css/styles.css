@@ -9,6 +9,16 @@
   --portfolio-buttons-border-color: #eeeeee;
   --header-border-color: #ececec;
   --icons-color: #afb1b8;
+  --hero-drop-shadow-color: rgba(0, 0, 0, 0.25);
+  --hero-gradient-color: rgba(47, 48, 58, 0.4);
+  --offers-label-bgc: rgba(47, 48, 58, 0.8);
+  --footer-grey-text-color: rgba(255, 255, 255, 0.6);
+  --footer-icons-bgc: rgba(255, 255, 255, 0.1);
+  --footer-form-input-border: rgba(255, 255, 255, 0.3);
+  --example-item-overlay-bgc: rgba(33, 150, 243, 0.9);
+  --modal-backdrop-bgc: rgba(0, 0, 0, 0.5);
+  --madal-close-border-color: rgba(0, 0, 0, 0.1);
+  --form-input-border-color: rgba(33, 33, 33, 0.2);
 }
 
 body {
@@ -171,11 +181,11 @@ body {
 
 .hero-section.section {
   background: #c4c4c4;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px var(--hero-drop-shadow-color));
   background-image: linear-gradient(
       to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
+      var(--hero-gradient-color),
+      var(--hero-gradient-color)
     ),
     url(../images/hero-bgc-image.jpg);
   background-position: center;
@@ -269,7 +279,7 @@ body {
 .benefits-icon-bgc {
   width: auto;
   height: 120px;
-  background: #f5f4fa;
+  background: var(--bgc-buttons-section);
   border-radius: 4px;
   margin-bottom: 30px;
   display: flex;
@@ -337,7 +347,7 @@ body {
   letter-spacing: 0.03;
   text-transform: uppercase;
 
-  background-color: rgba(47, 48, 58, 0.8);
+  background-color: var(--offers-label-bgc);
   position: absolute;
   right: 50%;
   bottom: 0px;
@@ -509,7 +519,7 @@ body {
 }
 
 .address-list {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-grey-text-color);
 }
 
 .address-list-item:not(:last-child) {
@@ -537,7 +547,7 @@ body {
 }
 
 .footer-column2 .icons-link {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--footer-icons-bgc);
   fill: var(--white-color);
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -562,10 +572,10 @@ body {
   width: 358px;
   height: 50px;
   padding-left: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--footer-form-input-border);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-grey-text-color);
   background-color: var(--bgc-hero);
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -704,7 +714,7 @@ body {
   justify-content: left;
   align-items: center;
   padding: 0 24px;
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: var(--example-item-overlay-bgc);
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -759,7 +769,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--modal-backdrop-bgc);
   opacity: 1;
   visibility: visible;
 }
@@ -795,7 +805,7 @@ body {
   height: 30px;
   fill: #000000;
   background-color: var(--white-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--madal-close-border-color);
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -867,7 +877,7 @@ body {
   color: var(--primary-text-color);
   border-width: 1px;
   border-style: solid;
-  border-color: rgba(33, 33, 33, 0.2);
+  border-color: var(--form-input-border-color);
   border-radius: 4px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -895,7 +905,7 @@ body {
   color: var(--primary-text-color);
   border-width: 1px;
   border-style: solid;
-  border-color: rgba(33, 33, 33, 0.2);
+  border-color: var(--form-input-border-color);
   border-radius: 4px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
